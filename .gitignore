@@ -42,8 +42,4 @@ build/
 ### VS Code ###
 .vscode/
 
-### Mac OS ###
-.DS_Store
-/src/main/resources/com/example/baitaplonoop/Media/
-/src/main/resources/com/example/baitaplonoop/Media/
-/src/main/resources/com/example/baitaplonoop/Media/Image/Question/
+
