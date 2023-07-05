@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="gui62" prefHeight="767.0" prefWidth="799.0" stylesheets="@Design/Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.baitaplonoop.controller.GUI62Controller">
+    <children>
+        <Label fx:id="quizName" layoutX="10.0" layoutY="14.0" prefHeight="51.0" prefWidth="613.0" textFill="#e10a0a" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="14.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="24.0" layoutY="157.0" mnemonicParsing="false" styleClass="button_blue" stylesheets="@Design/Style.css" text="REPAGINATE" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="157.0" />
+        <Label layoutX="533.0" layoutY="111.0" prefHeight="26.0" prefWidth="130.0" text="Maximun grade" AnchorPane.rightAnchor="136.0" AnchorPane.topAnchor="111.0" />
+        <TextField editable="false" layoutX="637.0" layoutY="110.0" prefHeight="27.0" prefWidth="52.0" text="10.00" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="110.0" />
+        <Button fx:id="save" layoutX="647.0" layoutY="116.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="52.0" styleClass="button_blue" stylesheets="@Design/Style.css" text="SAVE" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="110.0" />
+        <Label fx:id="totalOfMark" alignment="CENTER_RIGHT" layoutX="598.0" layoutY="142.0" prefHeight="27.0" prefWidth="106.0" text="Total of mark: 0.00" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="142.0" />
+        <Label fx:id="numberQuestionInTable" layoutX="24.0" layoutY="109.0" prefHeight="26.0" prefWidth="246.0" text="Questions: 0 | This quiz is open" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="110.0" />
+        <CheckBox fx:id="shuffle" layoutX="647.0" layoutY="208.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="63.0" text="Shuffle" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="208.0" />
+        <Label fx:id="addLabel" contentDisplay="CENTER" layoutX="728.0" layoutY="234.0" prefHeight="17.0" prefWidth="29.0" text="Add" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="234.0" />
+        <TableView fx:id="tableQuestions" layoutX="38.0" layoutY="264.0" prefHeight="256.0" prefWidth="724.0" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="264.0">
+            <columns>
+                <TableColumn fx:id="MultiQuestionsChoice" prefWidth="31.20001220703125" sortable="false" />
+                <TableColumn fx:id="Order" prefWidth="28.000030517578125" sortable="false" />
+                <TableColumn fx:id="Setting" prefWidth="34.399993896484375" sortable="false" />
+                <TableColumn fx:id="QuestionText" minWidth="6.39996337890625" prefWidth="465.5999755859375" sortable="false" />
+                <TableColumn fx:id="PlusIcon" prefWidth="39.20001220703125" sortable="false" />
+                <TableColumn fx:id="DeleteIcon" prefWidth="53.60003662109375" sortable="false" />
+                <TableColumn fx:id="QuestionMark" prefWidth="75.0" />
+            </columns>
+        </TableView>
+        <Text layoutX="209.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <ToggleButton fx:id="selectMultipleItems" layoutX="132.0" layoutY="156.0" mnemonicParsing="false" styleClass="button_blue" stylesheets="@Design/Style.css" text="SELECT MULTIPLEITEMS" AnchorPane.leftAnchor="132.0" AnchorPane.topAnchor="156.0" />
+        <Button fx:id="deleteMultipleItems" layoutX="255.0" layoutY="674.0" maxHeight="26.0" maxWidth="307.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="171.0" styleClass="button_blue" text="DELETE MULTIPLEITEMS" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="255.0" />
+        <ListView fx:id="listModeAdd" layoutX="556.0" layoutY="251.0" prefHeight="78.0" prefWidth="198.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="251.0" />
+    </children>
+</AnchorPane>

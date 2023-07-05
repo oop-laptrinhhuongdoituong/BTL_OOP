@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" prefHeight="190.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.baitaplonoop.controller.GUI11PopUpController">
+   <children>
+      <Label layoutX="36.0" layoutY="38.0" text="Question bank" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="38.0" />
+      <Hyperlink fx:id="hlQuestion" layoutX="205.0" layoutY="35.0" text="Question" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="38.0" />
+      <Hyperlink fx:id="hlCategory" layoutX="205.0" layoutY="59.0" text="Category" AnchorPane.topAnchor="70.0" />
+      <Hyperlink fx:id="hlImport" layoutX="205.0" layoutY="95.0" text="Import" AnchorPane.topAnchor="102.0" />
+      <Hyperlink fx:id="hlExport" layoutX="205.0" layoutY="127.0" text="Export" AnchorPane.topAnchor="134.0" />
+   </children>
+</AnchorPane>

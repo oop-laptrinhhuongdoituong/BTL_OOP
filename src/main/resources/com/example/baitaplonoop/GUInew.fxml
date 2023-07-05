@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1020.0" styleClass="anchor-pane" stylesheets="@Design/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.baitaplonoop.controller.GUI11Controller">
+    <AnchorPane fx:id="listQuiz_ap" layoutX="54.0" layoutY="176.0" prefHeight="600.0" prefWidth="912.0" styleClass="anchor-pane" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="180.0">
+        <ListView fx:id="lvQuiz" layoutX="14.0" layoutY="14.0" prefHeight="270.0" prefWidth="473.0" style="-fx-background-color: #F8F8FF;" styleClass="list-cell" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+    </AnchorPane>
+    <Label layoutX="36.0" layoutY="33.0" prefHeight="30.0" prefWidth="526.0" style="-fx-background-color: #4169E1;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+    <AnchorPane layoutX="54.0" layoutY="63.0" prefHeight="122.0" prefWidth="496.0" style="-fx-background-color: #F8F8FF;" styleClass="anchor-pane" stylesheets="@Design/Style.css" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="45.0">
+        <Label layoutX="40.0" layoutY="28.0" text="IT" textFill="FIREBRICK" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="28.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnTurnEditingOn" layoutX="347.0" layoutY="76.0" mnemonicParsing="false" styleClass="button_blue" stylesheets="@Design/Style.css" text="TURN EDITING ON" textFill="WHITE" AnchorPane.bottomAnchor="20.800000000000004" AnchorPane.rightAnchor="31.0" />
+        <Button fx:id="setting_btn" focusTraversable="false" layoutX="800.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: TRANSPARENT; -fx-cursor: HAND;" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="21.0">
+            <graphic>
+                <FontAwesomeIconView glyphName="GEAR" size="35" />
+            </graphic>
+        </Button>
+      <FlowPane fx:id="breadcrumb" layoutX="41.0" layoutY="61.0" prefHeight="43.0" prefWidth="613.0" AnchorPane.leftAnchor="41.0" AnchorPane.topAnchor="61.0" />
+    </AnchorPane>
+    <TabPane fx:id="tabPane" layoutX="54.0" layoutY="177.0" prefHeight="600.0" prefWidth="912.0" styleClass="tab" visible="false" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="180.0">
+        <Tab fx:id="questionTab_tp" closable="false" style="-fx-cursor: hand; -fx-fill: #fff" styleClass="tab-header-area" text="Questions">
+            <fx:include fx:id="GUI21_tp" source="GUI21.fxml" />
+        </Tab>
+        <Tab fx:id="categoryTab_tp" closable="false" style="-fx-cursor: hand" styleClass="tab-header-area" text="Categories">
+            <fx:include fx:id="GUI33_tp" source="GUI33AddCategory.fxml" />
+        </Tab>
+        <Tab fx:id="importTab_tp" closable="false" style="-fx-cursor: hand" styleClass="tab-header-area" text="Import">
+            <fx:include fx:id="GUI34_tp" source="GUI34.fxml" />
+        </Tab>
+        <Tab closable="false" style="-fx-cursor: hand" styleClass="tab-header-area" text="Export">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </Tab>
+    </TabPane>
+    <AnchorPane fx:id="addQuestion_ap" layoutX="54.0" layoutY="196.0" prefHeight="600.0" prefWidth="912.0" style="-fx-background-color: #F8F8FF;" styleClass="anchor-pane" visible="false" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="180.0">
+        <fx:include source="GUI32AddQuestion.fxml" />
+    </AnchorPane>
+    <AnchorPane fx:id="addQuiz_ap" layoutX="64.0" layoutY="190.0" prefHeight="600.0" prefWidth="912.0" style="-fx-background-color: #F8F8FF;" styleClass="anchor-pane" visible="false" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="180.0">
+        <fx:include source="GUI35AddingQuiz.fxml" />
+    </AnchorPane>
+    <AnchorPane fx:id="GUI61_ap" layoutX="64.0" layoutY="190.0" prefHeight="600.0" prefWidth="912.0" style="-fx-background-color: #F8F8FF;" styleClass="anchor-pane" visible="false" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="180.0">
+        <fx:include source="GUI61.fxml" />
+    </AnchorPane>
+    <AnchorPane fx:id="GUI62_ap" layoutX="64.0" layoutY="190.0" prefHeight="600.0" prefWidth="912.0" style="-fx-background-color: #F8F8FF;" styleClass="anchor-pane" visible="false" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="180.0">
+        <fx:include source="GUI62.fxml" />
+    </AnchorPane>
+    <AnchorPane fx:id="GUI63_ap" layoutX="64.0" layoutY="190.0" prefHeight="600.0" prefWidth="912.0" style="-fx-background-color: #F8F8FF;" styleClass="anchor-pane" visible="false" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="180.0">
+        <fx:include source="GUI63.fxml" />
+    </AnchorPane>
+    <AnchorPane fx:id="GUI65_ap" layoutX="64.0" layoutY="190.0" prefHeight="600.0" prefWidth="912.0" style="-fx-background-color: #F8F8FF;" styleClass="anchor-pane" visible="false" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="180.0">
+        <fx:include source="GUI65.fxml" />
+    </AnchorPane>
+</AnchorPane>
